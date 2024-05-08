@@ -1,0 +1,71 @@
+<doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login</title>
+    <link rel="shortcut icon" href="iniciar-sesion.png" />
+    <link rel="stylesheet" href="style_dos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">   
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</head>
+  <body>
+    
+    <div class="container">
+        <!-- Contenedor del formulario -->
+        <div class="formulario">
+            <!-- Encabezado del formulario -->
+            <h1>REGISTRARSE</h1>
+            <!-- Campos del formulario -->
+            <div class="mb-3">
+              <label for="cedula" class="form-label">Cédula:</label>
+              <input type="text" class="form-control" id="cedula" placeholder="Ingrese su cédula">
+          </div>
+          <div class="mb-3">
+              <label for="nombre_completo" class="form-label">Nombre completo:</label>
+              <input type="text" class="form-control" id="nombre_completo" placeholder="Ingrese su nombre completo">
+          </div>
+          <div class="mb-3">
+              <label for="fecha_nacimiento" class="form-label">Fecha de nacimiento:</label>
+              <input type="date" class="form-control" id="fecha_nacimiento">
+          </div>
+          <div class="mb-3">
+              <label for="direccion" class="form-label">Dirección:</label>
+              <input type="text" class="form-control" id="direccion" placeholder="Ingrese su dirección">
+          </div>
+          <div class="mb-3">
+              <label for="telefono" class="form-label">Teléfono:</label>
+              <input type="tel" class="form-control" id="telefono" placeholder="Ingrese su número de teléfono">
+          </div>
+          <div class="mb-3 usuario">
+            <label for="edtuser" class="content-name">Usuario:</label>
+            <input type="email" class="form-control" id="edtuser" placeholder="Email">
+          </div> 
+          <div class="mb-3 usuarioconfirmar">
+            <label for="edtconfirmuser" class="content-name">Confirmar Usuario:</label>
+            <input type="email" class="form-control" id="edtuser" placeholder="Email">
+          </div> 
+          <div class="mb-3 contraseña">
+            <label for="edtpassword" class="content-name">Contraseña:</label>
+            <input type="password" class="form-control" id="edtpassword" placeholder="Ingrese clave">
+        </div>
+        <div class="mb-3 contraseña">
+          <label for="edtconfirmarpassword" class="content-name">Confirmar Contraseña:</label>
+          <input type="password" class="form-control" id="edtpassword" placeholder="Ingrese clave">
+      </div>
+            <!-- Botones -->
+            <div class="d-grid gap-2">
+                <!-- Cambié la clase del botón a "button" -->
+                <input type="submit" id="btnregister" value="Register" class="button">
+                <input type="submit" id="btnreturn" value="Return" class="btn btn-secundary" onclick="window.location.href='/index.html'">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script type="module" src="register_user.js"></script>
+    <script src="register_valition.js"></script>
+
+  </body>
+</html>
